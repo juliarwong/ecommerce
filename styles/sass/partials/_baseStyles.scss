@@ -1,4 +1,4 @@
-@import ".variables";
+@import "./variables";
 
 .wrapper {
     width: 90%;
@@ -30,5 +30,36 @@ button {
         border-color: $solidWhite;
         color: $solidWhite;
         padding: 8px 12px;
+        &:hover {
+            background-color: $solidWhite;
+            color: $primary;
+        }
+        &:focus {
+            background-color: $solidWhite;
+            color: $primary;
+        }
+    }
+    &.solid {
+        color: $solidWhite;
+        background-color: $primary;
+        &:hover {
+            color: $primary;
+            background-color: $solidWhite;
+        }
+        &:focus {
+            color: $primary;
+            background-color: $solidWhite;
+        }
+    }
+    &.menuIcon {
+        border: none;
+        padding: 0;
+        display: inherit;
+        &:hover {
+            background-color: transparent;
+        }
+        &:focus {
+            background-color: transparent;
+        }
     }
 }
